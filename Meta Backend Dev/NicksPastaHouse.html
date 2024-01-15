@@ -1,19 +1,60 @@
 <!DOCTYPE html>
 <html>
-   <head>
-    <title>Week One Little Lemon</title>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Nick's Pasta House</title>
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
 </head>
-</body>
-<h1>Our Menu</h1>
-<h2>Bread</h2>
-<p></p>Corn Bread, Garlic Bread, Sourdough Bread.</p>
-<img src="Images/Bread.jpg" alt="Bread" width="240" height="135" alt="Images of different breads">
-<h2>Pasta</h2>
-<p></p>Spaghetti, Ravioli, Lasagna.</p>
-<img src="Images/Pasta.jpg" alt="Spaghetti" width="240" height="135" alt="Different Pastas">
+<body>
+<div class="header">
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Our Menu
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#bread">Bread</a>
+            <a class="dropdown-item" href="#pasta">Pasta Entrees</a>
+        </div>
+    </div>
+    <a href="NickspastahouseloginIndex.html" class="btn btn-primary">Customer Login</a>
+</div>
+<div class="container">
+    <div class="row" id="bread">
+        <div class="col">
+            <h2>Bread</h2>
+            <p>Corn Bread, Garlic Bread, Sourdough Bread.</p>
+            <img src="Images/Bread.jpg" alt="Bread" class="img-fluid">
+        </div>
+        <div class="col" id="pasta">
+            <h2>Pasta Entrees</h2>
+            <p>Spaghetti, Ravioli, Lasagna, Linguini.</p>
+            <img src="Images/Pasta.jpg" alt="Spaghetti" class="img-fluid">
+        </div>
+    </div>
+</div>
 <a href="Location.html" style="margin-left: 20px;">Location</a>
 <table>
-<p></p>
-</html>
+<tr>
+    <th>Dish</th>
+    <th>Price</th>
+</tr>
+<tr>
+    <td>Bread</td>
+    <td>$1.00</td>
+</tr>
+<tr>
+    <td>Pasta</td>
+    <td>$5.00</td>
+</tr>
+</table>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>
